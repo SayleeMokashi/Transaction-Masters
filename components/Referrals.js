@@ -35,8 +35,7 @@ function Referrals() {
       <div class="col-md-6">
         <h2 class="title fw-bold mb-4"> Special Deals</h2>
         <p class="lead mb-4">
-         ASK US ABOUT DISCOUNTS ON BULK TRANSACTIONS!! SEND US A REFERAL & GET AN AMAZON GIFT CARD FOR $50!! (After Successful contract signing with the referral.)
-FIRST THREE CONTRACT TO CLOSE TRANSACTIONS FOR ONLY $150 EACH!
+            Ask us about discounts on bulk transactions! Send us a referral and earn a $50 Amazon gift card once the referral signs a contract! Plus, the first three contracts to close are only $150 each!
         </p>
       </div>
     </div>
