@@ -755,8 +755,8 @@ ul {
 /* Simple List Item Styling */
 .simple-list-item {
   font-size: 1.1rem;
-  padding: 8px 0;
-  margin: 5px 0;
+  padding: 4px 0;
+  margin: 4px 0;
   color: #333;
 }
 
