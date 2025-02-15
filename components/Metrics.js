@@ -11,7 +11,7 @@ function Metrics() {
         <div class="team-member">
           <img src="/Images/Saylee.jpeg" alt="Member 1" class="team-image">
           <h3>Saylee Mokashi</h3>
-          <p>CEO</p>
+          <p>Co-Founder</p>
           <p>Saylee Mokashi is the go-to expert in guiding clients through the often-emotional journey of selling their home or the exciting process of buying their dream home. With a background in hospitality, she excels in providing exceptional customer service. </p>
         </div>
       </div>
@@ -21,7 +21,7 @@ function Metrics() {
         <div class="team-member">
           <img src="/Images/Shraddha.jpg" alt="Member 2" class="team-image">
           <h3>Shraddha Kharsikar</h3>
-          <p>Transaction Manager</p>
+          <p>Co-Founder</p>
           <p>"Shraddha uses her HR expertise to deliver strong organization, time management, and communication, handling the emotional complexities of real estate transactions with care.</p>
         </div>
       </div>
