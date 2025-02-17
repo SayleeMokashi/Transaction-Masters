@@ -332,7 +332,7 @@ Navbar Section
   height: 80px;
 }
 .nav-left {
-  display: flex;
+  flex-wrap: wrap;
 }
 /*** 
 
