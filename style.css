@@ -333,8 +333,6 @@ Navbar Section
 }
 .nav-left {
   display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
 }
 /*** 
