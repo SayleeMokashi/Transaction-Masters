@@ -17,7 +17,7 @@ function Navbar() {
   <div class="nav-right d-flex align-items-center ms-auto">
     <a class="navbar-brand me-5" href="#">
       <img
-        class="BrandLogo"
+        class="BrandLogo1"
         src="./Images/Screenshot 2025-02-17 at 10.18.01 PM-Photoroom.png"
         alt=""
         srcset=""
