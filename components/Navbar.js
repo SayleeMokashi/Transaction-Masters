@@ -13,19 +13,19 @@ function Navbar() {
     />
   </a>
   </div>
-<div class="nav-right d-flex align-items-center">
-  <div class="badges-items me- d-none d-sm-block">
-      </div>
-  <button
-    class="btn collapsed d-lg-none"
-    type="button"
-    data-bs-toggle="offcanvas"
-    data-bs-target="#offcanvasRight"
-    aria-controls="offcanvasRight"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
-</div>
+<!-- <div class="nav-right d-flex align-items-center">
+        <div class="badges-items me- d-none d-sm-block">
+        </div>
+       <button
+        class="btn collapsed d-lg-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
+      >
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    </div> -->
 <div
   class="offcanvas offcanvas-end"
   tabindex="-1"
