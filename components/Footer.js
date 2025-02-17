@@ -13,7 +13,7 @@ function Footer() {
           </div>
           <div class="contact-item">
             <i class="bi bi-envelope-fill"></i>
-            <a href="mailto:transaction.management.one@gmail.com" class="contact-link">transaction.management.one@gmail.com</a>
+            <a href="mailto:team@transaction-masters.com" class="contact-link">mailto:team@transaction-masters.com</a>
           </div>
         </div>
       </div>
