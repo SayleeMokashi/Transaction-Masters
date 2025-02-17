@@ -355,7 +355,7 @@ Hero Section
     padding-top: 64px;
   }
   .mockup-img img {
-    max-height: 640px;
+    max-height: 540px;
   }
 }
 @media (min-width: 992px) {
