@@ -47,10 +47,17 @@ function Testimonial() {
               <div class="content mt-3">
                 <div class="feed-personalDetails">
                   <p class="feed">
-In the past five years, I have been fortunate to have Saylee and Shraddha to coordinate nearly 100 transactions from contract to close. Their expertise makes the entire process seamless, allowing me to focus on the front end of my real estate business.
-Saylee and Shraddha’s communication is second to none, and they never miss a deadline. Their work is not only efficient and dependable but also consistently praised by clients. I’ve lost count of the number of reviews I’ve received that specifically highlight their professionalism and courtesy.
-As a full-time local Realtor, my name and reputation are of the utmost importance, and I am more than happy to vouch for the exceptional level of service these Transaction Masters provide with unwavering reliability. 
+                    In the past five years, I have been fortunate to have Saylee and Shraddha to coordinate nearly 100 transactions from contract to close. Their expertise makes the entire process seamless, allowing me to focus on the front end of my real estate business.
                   </p>
+
+                  <p class="feed">
+                  Saylee and Shraddha’s communication is second to none, and they never miss a deadline. Their work is not only efficient and dependable but also consistently praised by clients. I’ve lost count of the number of reviews I’ve received that specifically highlight their professionalism and courtesy.
+                  </p>
+
+                  <p class="feed">
+                    As a full-time local Realtor, my name and reputation are of the utmost importance, and I am more than happy to vouch for the exceptional level of service these Transaction Masters provide with unwavering reliability. 
+                  </p>
+                  
                   <div class="personal-detail d-flex flex-column mt-3">
                     <span class="per-name fw-bold">Brian L</span>
                     <span class="per-role">Realtor, EXP</span>
@@ -65,7 +72,15 @@ As a full-time local Realtor, my name and reputation are of the utmost importanc
               <div class="content mt-3">
                 <div class="feed-personalDetails">
                   <p class="feed">
-                    I've worked with  Saylee and Shraddha for years on hundreds of transactions during my real estate career and I couldn’t be more impressed with their level of service. They are hardworking, knowledgeable, and quick to respond to any agents, lenders, and clients alike. They helped me keep track of all the moving parts of the process, ensuring nothing slipped through the cracks. Their extensive experience was evident in the way they keep things running smoothly. What stood out the most was their ability to communicate effectively with clients and always keeping me informed every step of the way. I highly recommend Transaction Managers for anyone looking for experienced, reliable, and client-focused real estate transaction managers.  
+                    I've worked with  Saylee and Shraddha for years on hundreds of transactions during my real estate career and I couldn’t be more impressed with their level of service. They are hardworking, knowledgeable, and quick to respond to any agents, lenders, and clients alike. 
+                  </p>
+
+                  <p class="feed">
+                  They helped me keep track of all the moving parts of the process, ensuring nothing slipped through the cracks. Their extensive experience was evident in the way they keep things running smoothly. What stood out the most was their ability to communicate effectively with clients and always keeping me informed every step of the way.   
+                  </p>
+
+                  <p class="feed">
+                  I highly recommend Transaction Managers for anyone looking for experienced, reliable, and client-focused real estate transaction managers.    
                   </p>
                   <div class="personal-detail d-flex flex-column mt-3">
                     <span class="per-name fw-bold">Sherri J</span>
