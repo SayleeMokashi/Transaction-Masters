@@ -31,7 +31,7 @@ function Herosection() {
           <div
             class="mockup-img col-12 col-lg-5 d-flex overflow-hidden justify-content-center"
           >
-            <img class="" src="./Images/Real-Estate-iStock-edited.jpg" alt="" id="" />
+            <img class="text-wrapper" src="./Images/Real-Estate-iStock-edited.jpg" alt="" id="" />
           </div>
         </div>
         
