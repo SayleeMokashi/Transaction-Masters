@@ -339,7 +339,7 @@ Hero Section
 
 ***/
 #Herosection .text-wrapper {
-  padding-top: 70px;
+  padding-top: 100px;
 }
 .mockup-img img {
   max-height: 600px;
@@ -352,7 +352,7 @@ Hero Section
 
 @media (min-width: 786px) {
   #Herosection .text-wrapper {
-    padding-top: 64px;
+    padding-top: 100px;
   }
   .mockup-img img {
     max-height: 600px;
