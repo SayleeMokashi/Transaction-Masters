@@ -18,7 +18,7 @@ function Navbar() {
     <a class="navbar-brand me-5" href="#">
       <img
         class="BrandLogo"
-        src="./Images/ContactMe.jpg"
+        src="./Images/ContactMe.png"
         alt=""
         srcset=""
       />
