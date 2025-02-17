@@ -15,10 +15,14 @@ function Navbar() {
   </div>
 
   <div class="nav-right d-flex align-items-center ms-auto">
-    <div class="contact-info me-4">
-      <p class="m-1">Phone: 248-716-4247</p>
-      <p class="m-0">Email: <a href="mailto:team@transaction-masters.com">team@transaction-masters.com</a></p>
-    </div>
+    <a class="navbar-brand me-5" href="#">
+      <img
+        class="BrandLogo"
+        src="./Images/ContactMe.jpg"
+        alt=""
+        srcset=""
+      />
+    </a>
   </div>
 <!-- <div class="nav-right d-flex align-items-center">
         <div class="badges-items me- d-none d-sm-block">
