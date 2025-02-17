@@ -327,6 +327,10 @@ Navbar Section
 .badge-item .item {
   height: 90px;
 }
+.BrandLogo1,
+.badge-item .item {
+  height: 50px;
+}
 /*** 
 
 ====================================================================
