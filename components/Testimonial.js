@@ -21,7 +21,15 @@ function Testimonial() {
               <div class="content mt-3">
                 <div class="feed-personalDetails">
                   <p class="feed">
-                    As a real estate agent, I’ve worked with several transition coordinator companies, but this one stands out for its exceptional service. I rely on their expertise to help clients navigate the complexities of moving, downsizing, or relocating, and they've never disappointed. Their team is incredibly organized, proactive, and always willing to go the extra mile to ensure everything runs smoothly. Communication is always top-notch, and they’re great at keeping clients informed and at ease throughout the transition. It’s a true partnership—having them on board gives me confidence that my clients are in good hands and that their move will be as stress-free as possible. I highly recommend their services to any agent looking to elevate the client experience.
+                    As a real estate agent, I’ve worked with several transition coordinator companies, but this one stands out for its exceptional service. I rely on their expertise to help clients navigate the complexities of moving, downsizing, or relocating, and they've never disappointed. 
+                  </p>
+
+                  <p class="feed">
+                    Their team is incredibly organized, proactive, and always willing to go the extra mile to ensure everything runs smoothly. Communication is always top-notch, and they’re great at keeping clients informed and at ease throughout the transition. 
+                  </p>
+
+                  <p class="feed">
+                    It’s a true partnership—having them on board gives me confidence that my clients are in good hands and that their move will be as stress-free as possible. I highly recommend their services to any agent looking to elevate the client experience.
                   </p>
                   <div class="personal-detail d-flex flex-column mt-3">
                     <span class="per-name fw-bold"> Jennifer Y </span>
