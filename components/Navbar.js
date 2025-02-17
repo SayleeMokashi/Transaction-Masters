@@ -14,7 +14,7 @@ function Navbar() {
   </a>
   </div>
 
-  <div class="nav-left d-flex align-items-center ms-auto">
+  <div class="nav-left d-flex ">
     <a class="navbar-brand me-5" href="#">
       <img
         class="BrandLogo1"
