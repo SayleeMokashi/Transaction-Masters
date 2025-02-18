@@ -29,6 +29,10 @@ function Pricing() {
     {
       title: "Listing to Closing",
       price: "$500 per transaction",
+    },
+    {
+      title: "CRM Set Up",
+      price: "Depends on the number of contacts",
     }
   ];
 
