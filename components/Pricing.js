@@ -1,7 +1,7 @@
 function createPricingTable(title, price, index) {
   return `
     <div class="pricing-table position-relative col-3 d-flex align-items-center justify-content-center text-center">
-      <div class="inner-box overflow-hidden position-relative d-flex flex-column align-items-center justify-content-center" style="height: 100%;">
+      <div class="inner-box overflow-hidden position-relative d-flex flex-column align-items-center justify-content-center" style="height: 300px;"> <!-- Fixed height for all boxes -->
         <div class="title" style="font-size: 1.2rem; font-weight: bold;">${title}</div>
         <div class="price" style="font-size: 1rem; margin-top: 10px;">${price}</div>
       </div>
