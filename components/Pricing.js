@@ -2,8 +2,8 @@ function createPricingTable(title, price, index) {
   return `
     <div class="pricing-table position-relative col-lg-4 col-md-6 col-sm-12">
       <div class="inner-box overflow-hidden position-relative">
-        <div class="title">${title}</div>
-        <div class="price">${price}</div>
+        <div class="title" style="font-size: 1.5rem; font-weight: bold;">${title}</div>
+        <div class="price" style="font-size: 1.25rem; margin-top: 10px;">${price}</div>
         <!-- <div class="table-footer">
           <button class="button btn-theme-1" onclick="openModal(${index})">View Details</button>
         </div> -->
