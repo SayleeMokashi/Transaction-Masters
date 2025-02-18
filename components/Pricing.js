@@ -29,7 +29,7 @@ function Pricing() {
     },
     {
       title: "CRM Set Up",
-      price: "Depends on the number of contacts",
+      price: "Depends on # of contacts",
     }
   ];
 
