@@ -4,9 +4,9 @@ function createPricingTable(title, price, index) {
       <div class="inner-box overflow-hidden position-relative">
         <div class="title">${title}</div>
         <div class="price">${price}</div>
-        <div class="table-footer">
+        <!-- <div class="table-footer">
           <button class="button btn-theme-1" onclick="openModal(${index})">View Details</button>
-        </div>
+        </div> -->
       </div>
     </div>
   `;
