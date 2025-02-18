@@ -9,17 +9,15 @@ function Herosection() {
           <div class="text-wrapper col-12 col-lg-7">
             <div class="text-body">
               <h1 class="lead mb-4 fw-bold">
-               Transaction Masters
+               Our Story
               </h1>
-        <p>In the world of real estate, the road to buying or selling a home is often much more than just a transaction. It’s an emotional journey. It’s the excitement of finding a dream home, the stress of paperwork, and the relief of closing the deal. For many, it’s one of the most significant moments of their lives.</p>
+        <p>Saylee and Shraddha's journey in real estate began with a shared understanding of the emotional complexities that come with buying or selling a home. Recognizing that the industry needed more than just transactional support, they founded a real estate transaction management company focused on streamlining processes while providing essential emotional guidance.</p>
         
-        <p>This is where Saylee and Shraddha’s story begins—a story that’s rooted in empathy, passion, and a deep understanding of what clients and agents truly need.</p>
+        <p>Their approach empowers both clients and agents by simplifying the transaction, allowing agents to prioritize building meaningful relationships while ensuring clients feel supported and reassured throughout the process. Saylee and Shraddha are redefining the real estate experience by blending efficiency with empathy, making each step of the journey more seamless and human-centered.</p>
         
-        <p>Saylee and Shraddha first met at a local real estate company, where they quickly realized they shared not just a professional interest in the industry, but a profound understanding of the emotional rollercoaster that real estate transactions can be.</p>
+        <p>"The true value of a transaction lies not just in the paperwork, but in the trust and relationships we build along the way"</p>
         
-        <p>Driven by the desire to make a difference, Saylee and Shraddha set out to create something truly special—a real estate transaction management company designed to simplify every step of the process. But more than that, they wanted to offer something deeper: emotional support. Their vision is to handhold clients through the complexities, offering not just solutions, but the comfort, reassurance, and guidance they need during one of life’s most significant transitions.</p>
-        
-        <p>With a streamlined process, they’ve empowered agents to focus on what matters most—building meaningful relationships and making their clients’ dreams come true. Saylee and Shraddha are not just changing the way people buy and sell homes—they are changing the way people feel about the journey. And in doing so, they’re making every step of the process a little less stressful, a little more joyous, and a whole lot more human.</p>
+
             </div>
             <div class="btns-group mt-3">
               
