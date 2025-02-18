@@ -20,21 +20,21 @@ function Pricing() {
   const pricingData = [
     {
       title: "Listing Coordinator",
-      price: "$200",
+      price: "$250 per transaction",
     },
     {
-      title: "Standard",
-      price: "$300",
+      title: "Contract to Closing",
+      price: "$350 per transaction",
     },
     {
-      title: "Premium",
-      price: "On Actuals",
+      title: "Listing to Closing",
+      price: "$500 per transaction",
     }
   ];
 
   container.innerHTML = `
     <div class="text-body d-flex flex-column align-items-center">
-      <h2 class="text-center fw-bold">Pricing Packages</h2>
+      <h2 class="text-center fw-bold">Our Services</h2>
     </div>
     <div class="row mt-5">
       ${pricingData.map((data, index) => createPricingTable(data.title, data.price, index)).join('')}
