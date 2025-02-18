@@ -26,13 +26,10 @@ function Metrics() {
           <img src="/Images/Shraddha.jpg" alt="Member 2" class="team-image">
           <h3>Shraddha Kharsikar</h3>
           <p>Co-Founder</p>
-                  <p>With a background in Human Resources and over four years of dedicated experience in real estate transaction management, Shraddha understands that behind every transaction is a story, a dream, and a future being built. Passionate about supporting clients and agents through each step of the process, Shraddha takes pride in ensuring that every detail is meticulously handled with care, from paperwork to compliance, so that nothing gets overlooked.</p>
+                  <p>With a background in Human Resources and over four years in real estate transaction management, Shraddha understands that each transaction represents a story, a dream, and a future. She is passionate about guiding clients and agents through every step, handling all details— from paperwork to compliance—with care.</p>
         
-                  <p>Shraddha thrives on the satisfaction of making complex processes feel seamless and stress-free. Whether it’s organizing documents, managing timelines, or navigating intricate legalities, Shraddha is deeply committed to providing peace of mind, ensuring that every transaction is executed with the highest level of integrity and precision.</p>
-        
-                  <p>In a fast-paced industry, Shraddha is the calm and reliable presence you can count on to protect your interests, guide you through the process, and help make your real estate journey smoother and more rewarding.</p>
-        
-                  <blockquote>"The true value of a transaction lies not just in the paperwork, but in the trust and relationships we build along the way."</blockquote>
+                  <p>Shraddha takes pride in making complex processes seamless and stress-free, from organizing documents to managing timelines and legalities. In a fast-paced industry, she is the calm, reliable presence ensuring each transaction is executed with integrity and precision.</p>  
+                  
         </div>
       </div>
 
