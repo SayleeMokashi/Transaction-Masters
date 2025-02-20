@@ -74,7 +74,7 @@
   /* Extremely small screens (like very narrow phones, e.g., iPhone 15) */
   @media (max-width: 430px) {
     .pricing-table {
-      width: 50%; /* Ensure full width on narrow screens */
+      width: 100%; /* Ensure full width on narrow screens */
     }
 
     .inner-box {
