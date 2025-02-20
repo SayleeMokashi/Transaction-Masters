@@ -1,7 +1,7 @@
 <style>
   /* General styles */
   .pricing-table {
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Reduced margin for small screens */
   }
 
   .inner-box {
@@ -11,6 +11,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 15px; /* Added padding for spacing */
+    box-sizing: border-box;
   }
 
   .title {
@@ -23,7 +25,7 @@
     margin-top: 10px;
   }
 
-  /* Default for larger screens */
+  /* Default for large screens */
   @media (min-width: 992px) {
     .inner-box {
       height: 300px; /* Fixed height for large screens */
@@ -47,16 +49,44 @@
 
   /* Small screens (mobile) */
   @media (max-width: 576px) {
+    .pricing-table {
+      padding: 10px; /* Reduced padding for mobile */
+    }
+
     .inner-box {
-      height: 220px; /* Further reduce height for mobile */
+      height: 200px; /* Further reduce height for mobile */
     }
 
     .title {
-      font-size: 1rem; /* Adjust font size */
+      font-size: 1rem; /* Adjust font size for mobile */
     }
 
     .price {
       font-size: 0.85rem; /* Adjust price font size */
+    }
+
+    .container {
+      padding-left: 5px; /* Adjust container padding for mobile */
+      padding-right: 5px;
+    }
+  }
+
+  /* Extremely small screens (like very narrow phones, e.g., iPhone 15) */
+  @media (max-width: 430px) {
+    .pricing-table {
+      width: 100%; /* Ensure full width on narrow screens */
+    }
+
+    .inner-box {
+      height: 180px; /* Reduced height for ultra narrow screens */
+    }
+
+    .title {
+      font-size: 0.9rem; /* Further reduce font size */
+    }
+
+    .price {
+      font-size: 0.75rem; /* Further reduce price font size */
     }
   }
 </style>
@@ -64,7 +94,7 @@
 <script>
   function createPricingTable(title, price, index) {
     return `
-      <div class="pricing-table position-relative col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-center justify-content-center text-center">
+      <div class="pricing-table position-relative col-12 d-flex align-items-center justify-content-center text-center">
         <div class="inner-box">
           <div class="title">${title}</div>
           <div class="price">${price}</div>
