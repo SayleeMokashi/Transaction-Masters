@@ -556,7 +556,7 @@ Pricing Table Section
   }
 
   .pricing-table .inner-box {
-    height: 220px; /* Adjust height for mobile */
+    height: 150px; /* Adjust height for mobile */
   }
 
   /* Ensure columns are stacked vertically on small screens */
@@ -588,7 +588,7 @@ Pricing Table Section
   }
 
   .pricing-table .inner-box {
-    height: 180px; /* Reduce height for very small screens */
+    height: 120px; /* Reduce height for very small screens */
   }
 
   /* Ensure columns are stacked vertically on very narrow screens */
