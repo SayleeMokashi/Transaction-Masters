@@ -562,30 +562,22 @@ Pricing Table Section
 
 /* Media Query for Extremely Small Screens (e.g., iPhone 15 with 430px width) */
 @media (max-width: 430px) {
-  #Pricing .inner-box .price {
-    font-size: 12px; /* Further reduce font size */
-    line-height: 1.3; /* Adjust line-height for very narrow screens */
-  }
+    .pricing-table {
+      width: 100%; /* Ensure full width on narrow screens */
+    }
 
-  #Pricing .inner-box .title {
-    font-size: 14px; /* Adjust title font size */
-  }
+    .inner-box {
+      height: 180px; /* Reduced height for ultra narrow screens */
+    }
 
-  #Pricing .inner-box .title,
-  #Pricing .inner-box .price span.duration,
-  #Pricing .inner-box .table-content ul li,
-  .pricing-table .inner-box {
-    padding: 15px 15px; /* Reduce padding on ultra-narrow screens */
-  }
+    .title {
+      font-size: 0.9rem; /* Further reduce font size */
+    }
 
-  .pricing-table {
-    width: 100%; /* Ensure full width for narrow screens */
+    .price {
+      font-size: 0.75rem; /* Further reduce price font size */
+    }
   }
-
-  .pricing-table .inner-box {
-    height: 180px; /* Reduce height for very small screens */
-  }
-}
 
 /*** 
 
