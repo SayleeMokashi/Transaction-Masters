@@ -93,5 +93,26 @@ function Testimonial() {
         </div>
   `;
   Testimonial.appendChild(Container);
+
+  // Autoplay functionality
+  const testimonials = document.querySelectorAll('.testimonial-item');
+  let currentIndex = 0;
+  const totalTestimonials = testimonials.length;
+
+  function showNextTestimonial() {
+    // Hide current testimonial
+    testimonials[currentIndex].classList.add('d-none');
+
+    // Increment index to show the next testimonial
+    currentIndex = (currentIndex + 1) % totalTestimonials;
+
+    // Show next testimonial
+    testimonials[currentIndex].classList.remove('d-none');
+  }
+
+  // Initially show the first testimonial and start autoplay
+  testimonials[currentIndex].classList.remove('d-none');
+  setInterval(showNextTestimonial, 5000); // Change 5000 to the desired interval in milliseconds
 }
+
 Testimonial();
