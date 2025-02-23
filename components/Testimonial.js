@@ -6,7 +6,7 @@ function Testimonial() {
   <div id="carousel">
     <div id="slide-container">
       <!-- Testimonial 1 -->
-      <div class="slide" data-slideIndex="0">
+      <!-- <div class="slide" data-slideIndex="0">-->
         <div class="content mt-3">
           <div class="feed-personalDetails">
             <p class="feed">
@@ -24,7 +24,7 @@ function Testimonial() {
               <span class="per-role">Realtor, ExP</span>
             </div>
           </div>
-        </div>
+       <!--  </div>-->
       </div>
       <!-- Testimonial 2 -->
       <div class="slide" data-slideIndex="1">
