@@ -6,6 +6,9 @@ Global Settings
 ====================================================================
 
 ***/
+.d-none {
+  display: none;
+}
 :root {
   --primary-50: #f5f3ff;
   --primary-100: #ede9fe;
