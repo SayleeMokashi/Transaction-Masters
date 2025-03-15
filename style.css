@@ -407,6 +407,15 @@ Hero Section
   bottom: 33%;
   right: -239px;
 }
+blockquote {
+  border-left: 4px solid #007bff; /* Blue border on the left */
+  padding-left: 20px;
+  background-color: #f7f9fc; /* Light background color */
+  font-style: italic;
+  color: #333; /* Dark text color */
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
 
 /*** 
 
