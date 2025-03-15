@@ -34,12 +34,12 @@ function Herosection() {
         </div>
         
   `;
-  <!-- BG.innerHTML = `
-        <img class="band left-bands" src="./Images/left-bands.svg"></img>
+  BG.innerHTML = `
+        <!-- <img class="band left-bands" src="./Images/left-bands.svg"></img>
         <img class="band right-bands" src="./Images/right-bands.svg"></img>
        <div class="bg"></div>
-        <img class="purple-circle" src="./Images/Purple Circle.svg"></img> 
-  `;-->
+        <img class="purple-circle" src="./Images/Purple Circle.svg"></img> -->
+  `;
   Herosection.appendChild(Container);
   <!-- Herosection.appendChild(BG);-->
 }
