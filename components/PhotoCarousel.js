@@ -2,23 +2,19 @@
 const images = [
   {
     src: "./Images/Carousel 1.jpeg",
-    alt: "Slide 1 Image",
-    caption: "Saylee & Shraddha"
+    alt: "Slide 1 Image"
   },
   {
     src: "./Images/Carousel 2.jpeg",
-    alt: "Slide 2 Image",
-    caption: "Shraddha"
+    alt: "Slide 2 Image"
   },
   {
     src: "./Images/Carousel 3.jpeg",
-    alt: "Slide 3 Image",
-    caption: "Saylee"
+    alt: "Slide 3 Image"
   },
   {
     src: "./Images/Carousel 4.jpeg",
-    alt: "Slide 4 Image",
-    caption: "Saylee & Shraddha"
+    alt: "Slide 4 Image"
   }
 ];
 
@@ -44,9 +40,6 @@ function PhotoCarousel() {
     carouselHTML += `
       <div class="carousel-slide" id="slide-${index}" ${index === 0 ? 'style="display: block;"' : 'style="display: none;"'}>
         <img src="${image.src}" alt="${image.alt}" class="img-fluid w-100 h-auto" />
-        <div class="carousel-caption p-3 bg-dark bg-opacity-50 text-white">
-          <p class="m-0">${image.caption}</p>
-        </div>
       </div>
     `;
   });
@@ -60,18 +53,6 @@ function PhotoCarousel() {
       <button class="carousel-control next-btn" id="nextButton" aria-label="Next slide">
         <span class="carousel-control-icon">&#10095;</span>
       </button>
-      <div class="carousel-indicators d-flex justify-content-center mt-2" id="carouselIndicators">
-  `;
-
-  // Add indicators
-  images.forEach((_, index) => {
-    carouselHTML += `
-      <button class="indicator-btn ${index === 0 ? 'active' : ''}" data-slide="${index}" aria-label="Go to slide ${index + 1}"></button>
-    `;
-  });
-
-  carouselHTML += `
-      </div>
     </div>
   `;
 
@@ -81,7 +62,6 @@ function PhotoCarousel() {
   // Add event listeners
   const prevButton = document.getElementById("prevButton");
   const nextButton = document.getElementById("nextButton");
-  const indicators = document.querySelectorAll(".indicator-btn");
 
   let currentSlide = 0;
 
@@ -92,16 +72,8 @@ function PhotoCarousel() {
       slide.style.display = 'none';
     });
     
-    // Remove active class from all indicators
-    indicators.forEach(indicator => {
-      indicator.classList.remove('active');
-    });
-    
     // Show the selected slide
     document.getElementById(`slide-${index}`).style.display = 'block';
-    
-    // Activate corresponding indicator
-    indicators[index].classList.add('active');
     
     // Update current slide index
     currentSlide = index;
@@ -129,14 +101,6 @@ function PhotoCarousel() {
   prevButton.addEventListener('click', prevSlide);
   nextButton.addEventListener('click', nextSlide);
   
-  // Add event listeners to indicators
-  indicators.forEach(indicator => {
-    indicator.addEventListener('click', function() {
-      const slideIndex = parseInt(this.getAttribute('data-slide'));
-      showSlide(slideIndex);
-    });
-  });
-
   // Add keyboard navigation
   document.addEventListener('keydown', function(e) {
     if (e.key === 'ArrowLeft') {
@@ -145,20 +109,6 @@ function PhotoCarousel() {
       nextSlide();
     }
   });
-
-  // Optional: Add automatic slide change
-  // const autoSlideInterval = setInterval(nextSlide, 5000);
-  
-  // Optional: Pause auto-slide on hover
-  /*
-  container.addEventListener('mouseenter', function() {
-    clearInterval(autoSlideInterval);
-  });
-  
-  container.addEventListener('mouseleave', function() {
-    autoSlideInterval = setInterval(nextSlide, 5000);
-  });
-  */
 }
 
 // Initialize the carousel when the DOM is loaded
@@ -185,13 +135,6 @@ document.addEventListener("DOMContentLoaded", function() {
 .carousel-slide {
   width: 100%;
   position: relative;
-}
-
-.carousel-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .carousel-control {
@@ -222,28 +165,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
 .next-btn {
   right: 10px;
-}
-
-.carousel-indicators {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-}
-
-.indicator-btn {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-
-.indicator-btn.active {
-  background: white;
 }
 */
