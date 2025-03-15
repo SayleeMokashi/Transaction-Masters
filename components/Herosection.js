@@ -5,7 +5,7 @@ function Herosection() {
   Container.classList.add("container");
   BG.classList.add("hero-bg");
   Container.innerHTML = `
-  <div class="row row-cols-2 gx-5 gy-5">
+  <div class="row row-cols-2 mt-2 gx-5 gy-5">
           <div class="text-wrapper col-12 col-lg-7">
             <div class="text-body">
               <h1 class="lead mb-4 fw-bold">
