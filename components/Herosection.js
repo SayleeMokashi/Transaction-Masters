@@ -3,7 +3,7 @@ function Herosection() {
   const Container = document.createElement("div");
   Container.classList.add("container");
   Container.innerHTML = `
-  <div class="row row-cols-2 gx-5 gy-2">
+  <div class="row row-cols-2 gx-5 gy-5">
           <div class="text-wrapper col-12 col-lg-7">
             <div class="text-body">
               <h1 class="lead mb-2 fw-bold">
