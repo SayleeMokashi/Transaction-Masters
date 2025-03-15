@@ -2,7 +2,7 @@ function Testimonial() {
   const Testimonial = document.getElementById("Testimonial");
   const Container = document.createElement("div");
   Container.classList.add("container", "position-relative");
-  Container.innerHTML = `
+  Container.innerHTML = 
   <div
           class="testimonial-items row row-cols-1 row-cols-lg-2 gx-5 align-items-center position-relative"
         >
@@ -91,7 +91,7 @@ function Testimonial() {
             </div>
           </div>
         </div>
-  `;
+  ;
   Testimonial.appendChild(Container);
 }
 Testimonial();
