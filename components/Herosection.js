@@ -1,12 +1,14 @@
 function Herosection() {
   const Herosection = document.getElementById("Herosection");
   const Container = document.createElement("div");
+  const BG = document.createElement("div");
   Container.classList.add("container");
+  BG.classList.add("hero-bg");
   Container.innerHTML = `
   <div class="row row-cols-2 gx-5 gy-5">
           <div class="text-wrapper col-12 col-lg-7">
             <div class="text-body">
-              <h1 class="lead mb-2 fw-bold">
+              <h1 class="lead mb-4 fw-bold">
                Our Story
               </h1>
         <p>Saylee and Shraddha's journey in real estate began with a shared understanding of the emotional complexities that come with buying or selling a home. Recognizing that the industry needed more than just transactional support, they founded a real estate transaction management company focused on streamlining processes while providing essential emotional guidance.</p>
@@ -20,6 +22,8 @@ function Herosection() {
               <a class="button btn-theme-2" href="https://www.youtube.com/watch?v=3Sm3z8SEXMI" target="_blank">
               <i class="bi bi-play-circle me-2"></i> Watch Video
               </a>
+
+  
             </div>
           </div>
           <div
@@ -28,7 +32,15 @@ function Herosection() {
             <img class="text-wrapper" src="./Images/WhatsApp Image 2025-03-10 at 10.23.49 PM (7).jpeg" alt="" id="" />
           </div>
         </div>
+        
+  `;
+  BG.innerHTML = `
+        <!-- <img class="band left-bands" src="./Images/left-bands.svg"></img>
+        <img class="band right-bands" src="./Images/right-bands.svg"></img>
+       <div class="bg"></div>
+        <img class="purple-circle" src="./Images/Purple Circle.svg"></img> -->
   `;
   Herosection.appendChild(Container);
+  Herosection.appendChild(BG);
 }
 Herosection();
