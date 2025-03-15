@@ -166,26 +166,4 @@ document.addEventListener("DOMContentLoaded", function() {
 .next-btn {
   right: 10px;
 }
-
-/* If you want to move the navigation buttons further away from the edges */
-@media (min-width: 768px) {
-  .prev-btn {
-    left: 30px;
-  }
-  
-  .next-btn {
-    right: 30px;
-  }
-}
-
-/* For extra large screens, you may want to position them even further */
-@media (min-width: 1200px) {
-  .prev-btn {
-    left: 50px;
-  }
-  
-  .next-btn {
-    right: 50px;
-  }
-}
 */
