@@ -1,7 +1,7 @@
 function Metrics() {
   const Metrics = document.getElementById("Metric");
   const Container = document.createElement("div");
-  Container.classList.add("container", "mt-1");
+  Container.classList.add("container", "mt-0");
 
   Container.innerHTML = `
     <h1 class="text-center mb-2">Meet the Team</h1>
