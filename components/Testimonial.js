@@ -49,7 +49,7 @@ function Testimonial() {
   Container.classList.add("container", "position-relative");
 
   let testimonialsHTML = `
-    <div class="testimonial-items row row-cols-1 row-cols-lg-2 gx-5 align-items-center position-relative">
+    <div class="testimonial-items row row-cols-1 row-cols-lg-2 gx-2 align-items-center position-relative">
       <div class="text-body position-absolute">
         <div class="quote-mark position-absolute">
           <img src="./Images/Quote mark.png" alt="" />
