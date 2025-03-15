@@ -14,7 +14,7 @@ function Testimonial() {
       <div id="testimonialCarousel" class="carousel slide w-100" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="testimonial-item rounded p-4">
+            <div class="testimonial-item rounded">
               <p class="feed">
                     As a real estate agent, I’ve worked with several transition coordinator companies, but this one stands out for its exceptional service. I rely on their expertise to help clients navigate the complexities of moving, downsizing, or relocating, and they've never disappointed. 
                   </p>
@@ -33,7 +33,7 @@ function Testimonial() {
             </div>
           </div>
           <div class="carousel-item">
-            <div class="testimonial-item rounded p-4">
+            <div class="testimonial-item rounded">
               <p class="feed">
                     In the past five years, I have been fortunate to have Saylee and Shraddha to coordinate nearly 100 transactions from contract to close. Their expertise makes the entire process seamless, allowing me to focus on the front end of my real estate business.
                   </p>
@@ -52,7 +52,7 @@ function Testimonial() {
             </div>
           </div>
           <div class="carousel-item">
-            <div class="testimonial-item rounded p-4">
+            <div class="testimonial-item rounded">
               <p class="feed">
                     I've worked with  Saylee and Shraddha for years on hundreds of transactions during my real estate career and I couldn’t be more impressed with their level of service. They are hardworking, knowledgeable, and quick to respond to any agents, lenders, and clients alike. 
                   </p>
