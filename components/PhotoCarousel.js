@@ -1,24 +1,24 @@
 // Photo Carousel Component
 const images = [
   {
-    src: "./Images/slide1.jpg",
+    src: "./Images/Carousel 1.jpeg",
     alt: "Slide 1 Image",
-    caption: "Beautiful landscape view"
+    caption: "Saylee Shraddha"
   },
   {
-    src: "./Images/slide2.jpg",
+    src: "./Images/Carousel 2.jpeg",
     alt: "Slide 2 Image",
-    caption: "Urban cityscape"
+    caption: "Shraddha"
   },
   {
-    src: "./Images/slide3.jpg",
+    src: "./Images/Carousel 1.jpeg",
     alt: "Slide 3 Image",
-    caption: "Serene beach sunset"
+    caption: "Saylee Shraddha"
   },
   {
-    src: "./Images/slide4.jpg",
+    src: "./Images/Carousel 2.jpeg",
     alt: "Slide 4 Image",
-    caption: "Mountain vista"
+    caption: "Shraddha"
   }
 ];
 
