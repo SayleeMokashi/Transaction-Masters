@@ -3,7 +3,7 @@ const images = [
   {
     src: "./Images/Carousel 1.jpeg",
     alt: "Slide 1 Image",
-    caption: "Saylee Shraddha"
+    caption: "Saylee & Shraddha"
   },
   {
     src: "./Images/Carousel 2.jpeg",
@@ -11,14 +11,14 @@ const images = [
     caption: "Shraddha"
   },
   {
-    src: "./Images/Carousel 1.jpeg",
+    src: "./Images/Carousel 3.jpeg",
     alt: "Slide 3 Image",
-    caption: "Saylee Shraddha"
+    caption: "Saylee"
   },
   {
-    src: "./Images/Carousel 2.jpeg",
+    src: "./Images/Carousel 4.jpeg",
     alt: "Slide 4 Image",
-    caption: "Shraddha"
+    caption: "Saylee & Shraddha"
   }
 ];
 
