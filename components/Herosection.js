@@ -20,9 +20,10 @@ function Herosection() {
             </div>
             <div class="btns-group mt-3">
               
-              <!-- <a class="button btn-theme-2" href="#"
-                ><i class="bi bi-play-circle me-2"></i> Watch Video</a
-              >  -->
+               <a class="button btn-theme-2" href="https://www.youtube.com/watch?v=3Sm3z8SEXMI">
+                <i class="bi bi-play-circle me-2"></i> Watch Video
+                </a>
+  
             </div>
           </div>
           <div
