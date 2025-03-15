@@ -3,7 +3,7 @@ function Herosection() {
   const Container = document.createElement("div");
   const BG = document.createElement("div");
   Container.classList.add("container");
-  BG.classList.add("hero-bg");
+  <!--BG.classList.add("hero-bg");-->
   Container.innerHTML = `
   <div class="row row-cols-2 gx-5 gy-5">
           <div class="text-wrapper col-12 col-lg-7">
