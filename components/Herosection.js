@@ -1,9 +1,9 @@
 function Herosection() {
   const Herosection = document.getElementById("Herosection");
   const Container = document.createElement("div");
-  <!--const BG = document.createElement("div");-->
+  const BG = document.createElement("div");
   Container.classList.add("container");
-  <!--BG.classList.add("hero-bg");-->
+  BG.classList.add("hero-bg");
   Container.innerHTML = `
   <div class="row row-cols-2 gx-5 gy-5">
           <div class="text-wrapper col-12 col-lg-7">
@@ -41,6 +41,6 @@ function Herosection() {
         <img class="purple-circle" src="./Images/Purple Circle.svg"></img> -->
   `;
   Herosection.appendChild(Container);
-  <!-- Herosection.appendChild(BG);-->
+  Herosection.appendChild(BG);
 }
 Herosection();
