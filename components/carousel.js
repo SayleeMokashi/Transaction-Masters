@@ -7,17 +7,17 @@ function TestimonialsCarousel() {
     <div class="carousel" id="carousel">
       <div class="slide">
         <p>Love working with Allyson! She is professional, organized, and on top of all the things!</p>
-        <div class="stars">★★★★★</div>
+        
         <p>- Carolyn I.</p>
       </div>
       <div class="slide">
         <p>Allyson is by far the very best in the business. She is professional, positive, communicates well, and strengthens trust with clients.</p>
-        <div class="stars">★★★★★</div>
+        
         <p>- Rena B.</p>
       </div>
       <div class="slide">
         <p>Allyson is literally a life saver for me, daily! Highly recommend her to anyone needing a TC.</p>
-        <div class="stars">★★★★★</div>
+        
         <p>- Tracy B.</p>
       </div>
     </div>
