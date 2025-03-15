@@ -12,11 +12,11 @@ function Metrics() {
           <img src="/Images/Saylee.jpeg" alt="Member 1" class="team-image">
           <h3>Saylee Mokashi</h3>
           <p>Co-Founder</p>
-          <p>With over 5 years of experience in real estate transaction management, I’ve successfully managed over 300 closed transactions across diverse markets. Having lived in four different countries, I bring a global perspective to my work, building strong, long-lasting relationships with clients and colleagues alike. My focus is on seamless communication and meticulous attention to detail, ensuring every transaction runs smoothly from start to finish.</p>
+          <p>With over 5 years of experience in real estate transaction management, Saylee has successfully managed over 300 closed transactions across diverse markets. Having lived in four different countries, she brings a global perspective to my work, building strong, long lasting relationships with clients and colleagues alike. Her focus is on seamless communication and meticulous attention to detail, ensuring every transaction runs smoothly from start to finish. </p>
           
-          <p>I thrive in building trust and fostering long-term connections in the real estate industry.</p>
+          <p>She thrives in building trust and fostering long term connections in the real estate industry.</p>
           
-          <p>Managing every transaction as if it were for my own home, I ensure every detail is handled with care and precision.</p>
+          <p>Managing every transaction as if it were for her own  home, she ensures every detail is handled with care and precision.</p>
         </div>
       </div>
 
