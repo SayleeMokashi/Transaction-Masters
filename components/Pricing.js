@@ -17,20 +17,24 @@ function Pricing() {
   const pricingData = [
     {
       title: "Listing Coordinator",
-      price: "$250 per transaction",
+      price: "Comprehensive services designed to simplify the listing process",
     },
     {
       title: "Contract to Closing",
-      price: "$350 per transaction",
+      price: "Our Contract to Closing service for buyers ensures that every step of the transaction is handled smoothly and efficiently, from initial paperwork to the final closing day.",
     },
     {
       title: "Listing to Closing",
-      price: "$500 per transaction",
+      price: "Our Contract to Closing service for sellers ensures that every step of the transaction is managed from start to finish.",
     },
     {
       title: "CRM Set Up",
-      price: "Depends on # of contacts",
+      price: "We understand that managing client relationships and staying organized is key to a successful real estate business. That’s why we offer CRM Setup and Maintenance Services tailored specifically for real estate agents. Let us help you stay organized, improve client satisfaction, and ultimately close more deals!",
     }
+    {
+      title: "Gift Baskets",
+      price: "Each type of basket for client’s closing can be customized to make it more personal or relevant to your client’s lifestyle and needs",
+    } 
   ];
 
   container.innerHTML = `
