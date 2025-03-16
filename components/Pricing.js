@@ -64,8 +64,8 @@ function Pricing() {
       "gift-baskets.html"
     ];
     
-    // Open the new page
-    window.open(pageNames[index], "_blank");
+    // Open the new page in the same window (not in a new tab)
+    window.location.href = pageNames[index];
   }
 }
 
