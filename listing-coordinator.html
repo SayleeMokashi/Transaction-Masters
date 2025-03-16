@@ -1,315 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Listing Coordinator Service | Real Estate Solutions</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .hero-section {
-      background-color: #f8f9fa;
-      padding: 60px 0;
-      margin-bottom: 40px;
-    }
-    
-    .service-icon {
-      font-size: 3rem;
-      color: #0d6efd;
-      margin-bottom: 20px;
-    }
-    
-    .feature-card {
-      border-left: 4px solid #0d6efd;
-      padding: 20px;
-      margin-bottom: 20px;
-      background-color: #f8f9fa;
-      transition: transform 0.3s ease;
-    }
-    
-    .feature-card:hover {
-      transform: translateY(-5px);
-    }
-    
-    .testimonial {
-      font-style: italic;
-      padding: 20px;
-      background-color: #f8f9fa;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-    
-    .footer {
-      background-color: #343a40;
-      color: white;
-      padding: 40px 0;
-      margin-top: 60px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing Coordination Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #3498db;
+            margin-top: 30px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .service-item {
+            margin-bottom: 15px;
+        }
+        .service-subitem {
+            margin-left: 20px;
+        }
+        .price {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Real Estate Solutions</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html#Pricing">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
+        <section class="section">
+            <h1>Listing Coordination Service - <span class="price">$250</span></h1>
+            
+            <h2>Services Included:</h2>
+            
+            <div class="service-item">
+                <h3>Document Collection & Review:</h3>
+                <ul class="service-subitem">
+                    <li>Gather all necessary listing documents from the agent.</li>
+                    <li>Review documents for completeness, including:
+                        <ul>
+                            <li>Listing Contract</li>
+                            <li>Seller Contact Details & Marital Status (required by the title company)</li>
+                            <li>Showing Instructions</li>
+                            <li>Seller's Disclosure Statement (SDS), Lead-Based Paint (LBP), Agency Disclosures</li>
+                            <li>Trust Documents, HOA Information, Mortgage Release Authorizations</li>
+                            <li>Divorce Decrees or Death Certificates (if applicable)</li>
+                        </ul>
+                    </li>
+                    <li>Manage communication with both parties as needed.</li>
+                </ul>
+            </div>
+            
+            <div class="service-item">
+                <h3>Photography Coordination:</h3>
+                <ul class="service-subitem">
+                    <li>Contact the seller to schedule property photos (if required).</li>
+                    <li>Introduce ourselves to the client as the first touchpoint.</li>
+                </ul>
+            </div>
+            
+            <div class="service-item">
+                <h3>MLS Listing Input & Photo Management:</h3>
+                <ul class="service-subitem">
+                    <li>Input listing details into the MLS with all required fields completed.</li>
+                    <li>Sort, name, and upload property photos to MLS.</li>
+                    <li>Upload required disclosures for transparency and compliance.</li>
+                </ul>
+            </div>
+            
+            <div class="service-item">
+                <h3>ShowingTime Setup & Listing Review:</h3>
+                <ul class="service-subitem">
+                    <li>Set up ShowingTime for easy scheduling of property showings.</li>
+                    <li>Coordinate with the agent and seller to review the MLS listing for accuracy.</li>
+                    <li>Once approved, make the listing live, marking our second touchpoint with the client.</li>
+                </ul>
+            </div>
+            
+            <div class="service-item">
+                <h3>Client Communication & Online Accuracy Check:</h3>
+                <ul class="service-subitem">
+                    <li>Verify the listing's accuracy on online platforms like Zillow and Realtor.com.</li>
+                    <li>Send a congratulatory email to the client with a link to their Zillow listing (third touchpoint).</li>
+                </ul>
+            </div>
+            
+            <div class="service-item">
+                <h3>Pre-Title Order:</h3>
+                <ul class="service-subitem">
+                    <li>Place the pre-title order once the listing is live, ensuring all steps are covered.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Added Services Available:</h2>
+            <p>In addition to our comprehensive listing coordination services, we offer the following add-ons:</p>
+            <ul>
+                <li><strong>Lockbox Installation</strong> (within 20 miles of Canton, MI)</li>
+                <li><strong>Window Sign, Brochures, Open House Snack Bar, Shoe Sign & Boot Covers</strong> - Prices available upon request.</li>
+            </ul>
+        </section>
     </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="container text-center">
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <h1 class="display-4 fw-bold">Listing Coordinator</h1>
-          <p class="lead fs-4 mb-4">Simplifying the listing process from start to finish</p>
-          <button class="btn btn-primary btn-lg">Schedule a Consultation</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Main Content -->
-  <main class="container">
-    <!-- Service Overview -->
-    <section class="row mb-5">
-      <div class="col-lg-6">
-        <h2 class="mb-4">Service Overview</h2>
-        <p class="lead">Our Listing Coordinator service is designed to handle every aspect of getting your property on the market and maximizing its exposure to potential buyers.</p>
-        <p>From the initial preparation to the final stages of marketing, our experienced coordinators manage the entire listing process, allowing you to focus on other priorities while we ensure your property receives the attention it deserves.</p>
-        <p>This service is perfect for sellers who want a hands-off approach to listing their property, real estate agents looking to scale their business, or investors managing multiple properties simultaneously.</p>
-      </div>
-      <div class="col-lg-6">
-        <img src="/api/placeholder/600/400" alt="Listing Coordinator Service" class="img-fluid rounded shadow" />
-      </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="mb-5">
-      <h2 class="mb-4 text-center">Our Listing Process</h2>
-      <div class="row">
-        <div class="col-md-3 text-center mb-4">
-          <div class="service-icon">1</div>
-          <h4>Initial Consultation</h4>
-          <p>We begin with a thorough assessment of your property and discuss your goals and timeline.</p>
-        </div>
-        <div class="col-md-3 text-center mb-4">
-          <div class="service-icon">2</div>
-          <h4>Property Preparation</h4>
-          <p>Coordination of repairs, staging, and professional photography to showcase your property.</p>
-        </div>
-        <div class="col-md-3 text-center mb-4">
-          <div class="service-icon">3</div>
-          <h4>Market Analysis</h4>
-          <p>Comprehensive pricing strategy based on current market conditions and comparable properties.</p>
-        </div>
-        <div class="col-md-3 text-center mb-4">
-          <div class="service-icon">4</div>
-          <h4>Active Marketing</h4>
-          <p>Multi-channel promotion including MLS listing, social media, and targeted advertising.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="mb-5">
-      <h2 class="mb-4">Key Features</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="feature-card">
-            <h4>Professional Photography</h4>
-            <p>High-quality professional photos that highlight your property's best features and attract more potential buyers.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="feature-card">
-            <h4>Strategic Pricing</h4>
-            <p>Data-driven pricing analysis to position your property competitively in the current market.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="feature-card">
-            <h4>Detailed Property Description</h4>
-            <p>Compelling listing descriptions that emphasize unique selling points and generate interest.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="feature-card">
-            <h4>MLS Optimization</h4>
-            <p>Strategic categorization and keyword optimization to ensure maximum visibility in property searches.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="feature-card">
-            <h4>Social Media Marketing</h4>
-            <p>Targeted promotion across relevant platforms to reach potential buyers where they're most active.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="feature-card">
-            <h4>Weekly Progress Reports</h4>
-            <p>Detailed updates on listing performance, showing feedback, and market response.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="mb-5">
-      <h2 class="mb-4 text-center">What Our Clients Say</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="testimonial">
-            <p>"The Listing Coordinator service saved me countless hours and helped my property sell for $15,000 above asking price. Their professional approach made all the difference."</p>
-            <div class="d-flex align-items-center mt-3">
-              <strong>Sarah Thompson</strong>
-              <span class="ms-2 text-muted">Home Seller</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="testimonial">
-            <p>"As a real estate agent, using the Listing Coordinator service has allowed me to double my business. My clients are thrilled with the results, and I can focus on bringing in new listings."</p>
-            <div class="d-flex align-items-center mt-3">
-              <strong>Michael Reynolds</strong>
-              <span class="ms-2 text-muted">Realtor</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="testimonial">
-            <p>"I manage multiple investment properties, and this service has streamlined my operation significantly. The team is responsive, professional, and delivers results consistently."</p>
-            <div class="d-flex align-items-center mt-3">
-              <strong>Jennifer Wu</strong>
-              <span class="ms-2 text-muted">Property Investor</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section class="mb-5">
-      <h2 class="mb-4 text-center">Pricing Options</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-header bg-primary text-white text-center">
-              <h3 class="my-0 fw-normal">Basic Package</h3>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h4 class="card-title pricing-card-title text-center">$499</h4>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li class="mb-2">✓ Initial property consultation</li>
-                <li class="mb-2">✓ Professional photography</li>
-                <li class="mb-2">✓ Basic MLS listing</li>
-                <li class="mb-2">✓ Social media promotion</li>
-                <li class="mb-2">✓ Weekly performance reports</li>
-                <li class="text-muted mb-2">✗ Virtual tour</li>
-                <li class="text-muted mb-2">✗ Premium marketing package</li>
-              </ul>
-              <button class="btn btn-outline-primary mt-auto">Select Package</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 border-primary">
-            <div class="card-header bg-primary text-white text-center">
-              <h3 class="my-0 fw-normal">Premium Package</h3>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h4 class="card-title pricing-card-title text-center">$899</h4>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li class="mb-2">✓ Initial property consultation</li>
-                <li class="mb-2">✓ Professional photography</li>
-                <li class="mb-2">✓ Enhanced MLS listing</li>
-                <li class="mb-2">✓ Social media promotion</li>
-                <li class="mb-2">✓ Weekly performance reports</li>
-                <li class="mb-2">✓ Virtual tour</li>
-                <li class="mb-2">✓ Premium marketing package</li>
-              </ul>
-              <button class="btn btn-primary mt-auto">Select Package</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="text-center bg-light p-5 rounded mb-5">
-      <h2 class="mb-3">Ready to get started?</h2>
-      <p class="lead mb-4">Contact us today to learn more about how our Listing Coordinator service can help you maximize your property's potential.</p>
-      <button class="btn btn-primary btn-lg me-2">Schedule a Consultation</button>
-      <a href="index.html#Pricing" class="btn btn-outline-secondary btn-lg">View Other Services</a>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4 mb-md-0">
-          <h5>Real Estate Solutions</h5>
-          <p>Professional support for every stage of your real estate journey.</p>
-        </div>
-        <div class="col-md-3 mb-4 mb-md-0">
-          <h5>Services</h5>
-          <ul class="list-unstyled">
-            <li><a href="listing-coordinator.html" class="text-white">Listing Coordinator</a></li>
-            <li><a href="contract-to-closing.html" class="text-white">Contract to Closing</a></li>
-            <li><a href="listing-to-closing.html" class="text-white">Listing to Closing</a></li>
-            <li><a href="crm-setup.html" class="text-white">CRM Set Up</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 mb-4 mb-md-0">
-          <h5>Contact</h5>
-          <ul class="list-unstyled">
-            <li>123 Real Estate Ave.</li>
-            <li>Suite 456</li>
-            <li>Austin, TX 78701</li>
-            <li>(555) 123-4567</li>
-          </ul>
-        </div>
-        <div class="col-md-2">
-          <h5>Follow Us</h5>
-          <div>
-            <a href="#" class="text-white me-2">FB</a>
-            <a href="#" class="text-white me-2">IG</a>
-            <a href="#" class="text-white me-2">LI</a>
-            <a href="#" class="text-white">TW</a>
-          </div>
-        </div>
-      </div>
-      <hr class="mt-4 mb-4 bg-light">
-      <div class="row">
-        <div class="col-md-6 text-center text-md-start">
-          <p class="mb-0">© 2025 Real Estate Solutions. All rights reserved.</p>
-        </div>
-        <div class="col-md-6 text-center text-md-end">
-          <a href="#" class="text-white me-3">Privacy Policy</a>
-          <a href="#" class="text-white">Terms of Service</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
