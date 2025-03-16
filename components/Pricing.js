@@ -29,12 +29,12 @@ function Pricing() {
     },
     {
       title: "CRM Set Up",
-      price: "We understand that managing client relationships and staying organized is key to a successful real estate business. That’s why we offer CRM Setup and Maintenance Services tailored specifically for real estate agents. Let us help you stay organized, improve client satisfaction, and ultimately close more deals!",
-    }
+      price: "We understand that managing client relationships and staying organized is key to a successful real estate business. That's why we offer CRM Setup and Maintenance Services tailored specifically for real estate agents. Let us help you stay organized, improve client satisfaction, and ultimately close more deals!",
+    },
     {
       title: "Gift Baskets",
-      price: "Each type of basket for client’s closing can be customized to make it more personal or relevant to your client’s lifestyle and needs",
-    } 
+      price: "Each type of basket for client's closing can be customized to make it more personal or relevant to your client's lifestyle and needs",
+    }
   ];
 
   container.innerHTML = `
