@@ -35,8 +35,10 @@ function TestimonialCarousel() {
 
   // Create carousel structure
   let carouselHTML = `
-  <!--<h2 class="title fw-bold text-center mb-4">Testimonials</h2>-->
-  <h2 class="title fw-bold">Testimonials</h2>
+  <!--<h2 class="title fw-bold text-center mb-4">Testimonials</h2>
+      <div class="text-body d-flex flex-column align-items-center">
+      <h2 class="text-center fw-bold">Our Services</h2>-->
+  <h2 class="title fw-bold text-center">Testimonials</h2>
   <div class="carousel-wrapper position-relative overflow-hidden rounded">
     <div class="carousel-inner d-flex" id="carouselInner">
   `;
