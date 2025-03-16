@@ -49,7 +49,7 @@ function Pricing() {
     <div class="text-body d-flex flex-column align-items-center">
       <h2 class="text-center fw-bold">Our Services</h2>
     </div>
-    <div class="row mt-5">
+    <div class="row mt-3">
       ${pricingData.map(data => createServiceCard(data.title, data.description, data.url)).join('')}
     </div>
   `;
