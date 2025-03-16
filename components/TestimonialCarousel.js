@@ -58,30 +58,14 @@ function TestimonialCarousel() {
     `;
   });
 
-  // Add navigation controls
+  // Close the carousel structure
   carouselHTML += `
-    </div>
-    <button class="carousel-control prev-btn" id="prevButton" aria-label="Previous testimonial">
-      <span class="carousel-control-icon">&#10094;</span>
-    </button>
-    <button class="carousel-control next-btn" id="nextButton" aria-label="Next testimonial">
-      <span class="carousel-control-icon">&#10095;</span>
-    </button>
-    <div class="carousel-indicators d-flex justify-content-center mt-3">
-      ${testimonials1.map((_, index) => `
-        <button class="indicator-dot mx-1" aria-label="Go to testimonial ${index + 1}" 
-          id="indicator-${index}" ${index === 0 ? 'aria-current="true"' : ''}></button>
-      `).join('')}
     </div>
   </div>
   `;
 
   container.innerHTML = carouselHTML;
   carouselContainer.appendChild(container);
-
-  // Add event listeners
-  const prevButton = document.getElementById("prevButton");
-  const nextButton = document.getElementById("nextButton");
 
   let currentSlide = 0;
 
@@ -91,17 +75,9 @@ function TestimonialCarousel() {
     document.querySelectorAll('.carousel-slide').forEach(slide => {
       slide.style.display = 'none';
     });
-    
-    // Remove active state from all indicators
-    document.querySelectorAll('.indicator-dot').forEach(dot => {
-      dot.removeAttribute('aria-current');
-    });
 
     // Show the selected slide
     document.getElementById(`slide-${index}`).style.display = 'block';
-    
-    // Set active state for current indicator
-    document.getElementById(`indicator-${index}`).setAttribute('aria-current', 'true');
 
     // Update current slide index
     currentSlide = index;
@@ -116,35 +92,6 @@ function TestimonialCarousel() {
     showSlide(next);
   }
 
-  // Previous slide function
-  function prevSlide() {
-    let prev = currentSlide - 1;
-    if (prev < 0) {
-      prev = testimonials1.length - 1;
-    }
-    showSlide(prev);
-  }
-
-  // Add event listeners for controls
-  prevButton.addEventListener('click', prevSlide);
-  nextButton.addEventListener('click', nextSlide);
-  
-  // Add event listeners for indicators
-  testimonials1.forEach((_, index) => {
-    document.getElementById(`indicator-${index}`).addEventListener('click', () => {
-      showSlide(index);
-    });
-  });
-
-  // Add keyboard navigation
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'ArrowLeft') {
-      prevSlide();
-    } else if (e.key === 'ArrowRight') {
-      nextSlide();
-    }
-  });
-  
   // Auto advance slides every 8 seconds
   setInterval(nextSlide, 8000);
 }
@@ -175,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function() {
 .carousel-slide {
   width: 100%;
   position: relative;
-  padding: 0 60px;
+  padding: 0 40px;
 }
 
 .testimonial-text {
@@ -198,56 +145,6 @@ document.addEventListener("DOMContentLoaded", function() {
 .per-role {
   color: #666;
   font-size: 0.9rem;
-}
-
-.carousel-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 10;
-  transition: background 0.3s;
-}
-
-.carousel-control:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.prev-btn {
-  left: 10px;
-}
-
-.next-btn {
-  right: 10px;
-}
-
-.carousel-indicators {
-  position: absolute;
-  bottom: -30px;
-  left: 0;
-  right: 0;
-}
-
-.indicator-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: none;
-  background: #ccc;
-  cursor: pointer;
-}
-
-.indicator-dot[aria-current="true"] {
-  background: #333;
 }
 
 .quote-mark img {
