@@ -30,7 +30,7 @@ function Pricing() {
     },
     {
       title: "Contract to Closing",
-      description: "Managing buyer transactions from paperwork to closing day",
+      description: "Guiding buyers from contract to closing",
       url: "contract-to-closing.html"
     },
     {
@@ -40,7 +40,7 @@ function Pricing() {
     },
     {
       title: "CRM Set Up",
-      description: "Custom CRM setup to improve organization and client relationships",
+      description: "Simple CRM: better relationships, higher conversions",
       url: "crm-setup.html"
     }
   ];
