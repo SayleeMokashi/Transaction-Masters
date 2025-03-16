@@ -35,9 +35,7 @@ function TestimonialCarousel() {
 
   // Create carousel structure
   let carouselHTML = `
-  <!--<h2 class="title fw-bold text-center mb-4">Testimonials</h2>
-      <div class="text-body d-flex flex-column align-items-center">
-      <h2 class="text-center fw-bold">Our Services</h2>-->
+
   <h2 class="title fw-bold text-center">Testimonials</h2>
   <div class="carousel-wrapper position-relative overflow-hidden rounded">
     <div class="carousel-inner d-flex" id="carouselInner">
@@ -48,9 +46,9 @@ function TestimonialCarousel() {
     carouselHTML += `
     <div class="carousel-slide testimonial-item" id="slide-${index}" ${index === 0 ? 'style="display: block;"' : 'style="display: none;"'}>
       <div class="bg-white rounded p-4">
-        <div class="quote-mark mb-3">
+        <!--<div class="quote-mark mb-3">
           <img src="./Images/Quote mark.png" alt="Quote" />
-        </div>
+        </div>-->
         <p class="testimonial-text mb-4">${testimonial.text}</p>
         <div class="personal-detail">
           <p class="per-name fw-bold mb-1">${testimonial.name}</p>
