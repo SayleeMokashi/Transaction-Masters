@@ -26,19 +26,19 @@ function Pricing() {
     },
     {
       title: "Contract to Closing",
-      price: "Our Contract to Closing service for buyers ensures that every step of the transaction is handled smoothly and efficiently, from initial paperwork to the final closing day.",
+      price: "Contract-to-Closing service for buyers transactions.",
     },
     {
       title: "Listing to Closing",
-      price: "Our Contract to Closing service for sellers ensures that every step of the transaction is managed from start to finish.",
+      price: "Seamless contract-to-closing service for home sellers.",
     },
     {
       title: "CRM Set Up",
-      price: "We understand that managing client relationships and staying organized is key to a successful real estate business. That's why we offer CRM Setup and Maintenance Services tailored specifically for real estate agents. Let us help you stay organized, improve client satisfaction, and ultimately close more deals!",
+      price: "CRM setup & maintenance to streamline real estate success.",
     },
     {
       title: "Gift Baskets",
-      price: "Each type of basket for client's closing can be customized to make it more personal or relevant to your client's lifestyle and needs",
+      price: "Customize closing baskets to match clients' lifestyles & needs",
     }
   ];
   
