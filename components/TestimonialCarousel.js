@@ -37,7 +37,7 @@ function TestimonialCarousel() {
   let carouselHTML = `
 <!--<div class="text-body">
               <h1 class="lead mb-4 fw-bold">  -->
-  <h1 class="lead mb-4 fw-bold text-body text-center">Testimonials</h2>
+  <h1 class="lead mb-4 fw-bold text-center">Testimonials</h2>
   <div class="carousel-wrapper position-relative overflow-hidden rounded">
     <div class="carousel-inner d-flex" id="carouselInner">
   `;
