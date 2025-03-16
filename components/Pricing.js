@@ -30,10 +30,6 @@ function Pricing() {
     {
       title: "CRM Set Up",
       price: "Custom CRM setup to improve organization and client relationships",
-    },
-    {
-      title: "Gift Baskets",
-      price: "Personalized closing gifts customized to your client's preferences",
     }
   ];
 
