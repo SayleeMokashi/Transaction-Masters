@@ -1,58 +1,61 @@
-function createServiceCard(title, description, index) {
+function createServiceCard(title, description, linkUrl) {
   return `
-    <article class="service-card col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body d-flex flex-column align-items-center justify-content-center text-center p-4">
-          <h3 class="card-title fw-bold mb-3">${title}</h3>
-          <p class="card-text">${description}</p>
-          <a href="#learn-more-${index}" class="btn btn-outline-primary mt-auto">Learn More</a>
-        </div>
+    <div class="pricing-table position-relative col-lg-3 col-md-4 col-sm-6 col-12 mb-4 d-flex align-items-center justify-content-center text-center">
+      <div class="inner-box overflow-hidden position-relative d-flex flex-column align-items-center justify-content-center" style="height: 300px;">
+        <div class="title" style="font-size: 1.2rem; font-weight: bold;">${title}</div>
+        <div class="price" style="font-size: 1rem; margin-top: 10px;">${description}</div>
+        <a href="${linkUrl}" class="btn btn-primary mt-3">Learn More</a>
       </div>
-    </article>
+    </div>
   `;
 }
 
-function initializeServices() {
+function Pricing() {
   const pricingContainer = document.getElementById("Pricing");
   
-  // Error handling
+  // Check if pricing container exists
   if (!pricingContainer) {
     console.error("Pricing container not found");
     return;
   }
   
-  const serviceData = [
+  const container = document.createElement("div");
+  container.classList.add("container");
+  
+  const pricingData = [
     {
       title: "Listing Coordinator",
       description: "Simplifying the listing process from start to finish",
+      url: "listing-coordinator.html"
     },
     {
       title: "Contract to Closing",
       description: "Managing buyer transactions from paperwork to closing day",
+      url: "contract-to-closing.html"
     },
     {
       title: "Listing to Closing",
       description: "Full-service seller transaction management",
+      url: "listing-to-closing.html"
     },
     {
       title: "CRM Set Up",
       description: "Custom CRM setup to improve organization and client relationships",
+      url: "crm-setup.html"
     }
   ];
   
-  pricingContainer.innerHTML = `
-    <section class="container py-5">
-      <header class="text-center mb-5">
-        <h2 class="fw-bold">Our Services</h2>
-        <p class="lead">Professional support for every stage of your real estate journey</p>
-      </header>
-      <div class="row g-4">
-        ${serviceData.map((data, index) => 
-          createServiceCard(data.title, data.description, index)).join('')}
-      </div>
-    </section>
+  container.innerHTML = `
+    <div class="text-body d-flex flex-column align-items-center">
+      <h2 class="text-center fw-bold">Our Services</h2>
+    </div>
+    <div class="row mt-5">
+      ${pricingData.map(data => createServiceCard(data.title, data.description, data.url)).join('')}
+    </div>
   `;
+  
+  pricingContainer.appendChild(container);
 }
 
 // Run when DOM is fully loaded
-document.addEventListener('DOMContentLoaded', initializeServices);
+document.addEventListener('DOMContentLoaded', Pricing);
