@@ -25,7 +25,7 @@ function Pricing() {
   const pricingData = [
     {
       title: "Listing Coordinator",
-      description: "Simplifying the listing process from start to finish",
+      description: "Streamlining listings from preparation to sale",
       url: "listing-coordinator.html"
     },
     {
@@ -40,7 +40,7 @@ function Pricing() {
     },
     {
       title: "CRM Set Up",
-      description: "Simple CRM: better relationships, higher conversions",
+      description: "CRMs: Organize contacts, boost conversions",
       url: "crm-setup.html"
     }
   ];
