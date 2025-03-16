@@ -1,5 +1,5 @@
 // Testimonial Carousel Component
-const testimonials = [
+const testimonials1 = [
   {
     name: "Jennifer Y",
     role: "Realtor, ExP",
@@ -41,7 +41,7 @@ function TestimonialCarousel() {
   `;
 
   // Add all testimonials to the carousel
-  testimonials.forEach((testimonial, index) => {
+  testimonials1.forEach((testimonial, index) => {
     carouselHTML += `
     <div class="carousel-slide testimonial-item" id="slide-${index}" ${index === 0 ? 'style="display: block;"' : 'style="display: none;"'}>
       <div class="bg-white rounded p-4">
@@ -68,7 +68,7 @@ function TestimonialCarousel() {
       <span class="carousel-control-icon">&#10095;</span>
     </button>
     <div class="carousel-indicators d-flex justify-content-center mt-3">
-      ${testimonials.map((_, index) => `
+      ${testimonials1.map((_, index) => `
         <button class="indicator-dot mx-1" aria-label="Go to testimonial ${index + 1}" 
           id="indicator-${index}" ${index === 0 ? 'aria-current="true"' : ''}></button>
       `).join('')}
@@ -110,7 +110,7 @@ function TestimonialCarousel() {
   // Next slide function
   function nextSlide() {
     let next = currentSlide + 1;
-    if (next >= testimonials.length) {
+    if (next >= testimonials1.length) {
       next = 0;
     }
     showSlide(next);
@@ -120,7 +120,7 @@ function TestimonialCarousel() {
   function prevSlide() {
     let prev = currentSlide - 1;
     if (prev < 0) {
-      prev = testimonials.length - 1;
+      prev = testimonials1.length - 1;
     }
     showSlide(prev);
   }
@@ -130,7 +130,7 @@ function TestimonialCarousel() {
   nextButton.addEventListener('click', nextSlide);
   
   // Add event listeners for indicators
-  testimonials.forEach((_, index) => {
+  testimonials1.forEach((_, index) => {
     document.getElementById(`indicator-${index}`).addEventListener('click', () => {
       showSlide(index);
     });
