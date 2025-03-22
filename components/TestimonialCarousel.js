@@ -1,5 +1,5 @@
 // Testimonial Carousel Component
-const testimonials = [
+const testimonials1 = [
   {
     name: "Jennifer Y",
     role: "Realtor, ExP",
@@ -47,7 +47,7 @@ function TestimonialCarousel() {
   `;
 
   // Add all testimonials to the carousel
-  testimonials.forEach((testimonial, index) => {
+  testimonials1.forEach((testimonial, index) => {
     carouselHTML += `
     <div class="carousel-slide testimonial-item" id="slide-${index}" ${index === 0 ? 'style="opacity: 1;"' : 'style="opacity: 0; position: absolute;"'}>
       <blockquote class="testimonial-blockquote">
@@ -67,7 +67,7 @@ function TestimonialCarousel() {
     <div class="carousel-dots d-flex justify-content-center mt-4">
   `;
   
-  testimonials.forEach((_, index) => {
+  testimonials1.forEach((_, index) => {
     carouselHTML += `
       <button class="carousel-dot ${index === 0 ? 'active' : ''}" 
               onclick="changeSlide(${index})" 
@@ -213,7 +213,7 @@ function TestimonialCarousel() {
   // Next slide function
   function nextSlide() {
     let next = currentSlide + 1;
-    if (next >= testimonials.length) {
+    if (next >= testimonials1.length) {
       next = 0;
     }
     window.changeSlide(next);
