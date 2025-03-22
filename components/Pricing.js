@@ -1,7 +1,7 @@
 function createServiceCard(title, description, linkUrl) {
   return `
     <div class="pricing-table position-relative col-lg-3 col-md-4 col-sm-6 col-12 mb-4 d-flex align-items-center justify-content-center text-center">
-      <div class="inner-box overflow-hidden position-relative d-flex flex-column align-items-center justify-content-center" style="height: 200px;">
+      <div class="inner-box overflow-hidden position-relative d-flex flex-column align-items-center justify-content-center" style="height: 400px;">
         <div class="title" style="font-size: 1rem; font-weight: bold;">${title}</div>
         <div class="price" style="font-size: 0.8rem; margin-top: 7px;">${description}</div>
         <a href="${linkUrl}" class="btn btn-primary mt-5">Learn More</a>
