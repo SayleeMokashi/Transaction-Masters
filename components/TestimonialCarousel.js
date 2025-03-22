@@ -36,9 +36,9 @@ function TestimonialCarousel() {
   // Create carousel structure
   let carouselHTML = `
   <div class="testimonial-header text-center mb-4">
-    <div class="quote-mark mb-3">
+    <!-- <div class="quote-mark mb-3">
       <img src="./Images/Quote mark.png" alt="Quote" />
-    </div>
+    </div> -->
     <h2 class="title fw-bold">Testimonials</h2>
   </div>
   
