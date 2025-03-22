@@ -1,5 +1,5 @@
 // Testimonial Carousel Component
-const testimonials1 = [
+const testimonials = [
   {
     name: "Jennifer Y",
     role: "Realtor, ExP",
@@ -31,36 +31,50 @@ function TestimonialCarousel() {
 
   // Create main container
   const container = document.createElement("div");
-  container.classList.add("container", "carousel-container", "position-relative", "my-5");
+  container.classList.add("container", "carousel-container", "position-relative", "my-5", "py-4");
 
   // Create carousel structure
   let carouselHTML = `
-<!--<div class="text-body">
-              <h1 class="lead mb-4 fw-bold">  -->
-  <h1 class="text-center mb-1">Testimonials</h2>
-  <div class="carousel-wrapper position-relative overflow-hidden rounded">
+  <div class="testimonial-header text-center mb-4">
+    <div class="quote-mark mb-3">
+      <img src="./Images/Quote mark.png" alt="Quote" />
+    </div>
+    <h2 class="title fw-bold">Testimonials</h2>
+  </div>
+  
+  <div class="carousel-wrapper position-relative overflow-hidden">
     <div class="carousel-inner d-flex" id="carouselInner">
   `;
 
   // Add all testimonials to the carousel
-  testimonials1.forEach((testimonial, index) => {
+  testimonials.forEach((testimonial, index) => {
     carouselHTML += `
-    <div class="carousel-slide testimonial-item" id="slide-${index}" ${index === 0 ? 'style="display: block;"' : 'style="display: none;"'}>
-      <div class="bg-white rounded p-4">
-        <!--<div class="quote-mark mb-3">
-          <img src="./Images/Quote mark.png" alt="Quote" />
-        </div>-->
-        <p class="testimonial-text mb-4">${testimonial.text}</p>
-        <div class="personal-detail">
-          <p class="per-name fw-bold mb-1">${testimonial.name}</p>
-          <p class="per-role">${testimonial.role}</p>
-        </div>
+    <div class="carousel-slide testimonial-item" id="slide-${index}" ${index === 0 ? 'style="opacity: 1;"' : 'style="opacity: 0; position: absolute;"'}>
+      <blockquote class="testimonial-blockquote">
+        <p class="testimonial-text">${testimonial.text}</p>
+      </blockquote>
+      <div class="testimonial-author">
+        <span class="author-name">${testimonial.name}</span>
+        <span class="author-role">${testimonial.role}</span>
       </div>
     </div>
     `;
   });
 
-  // Close the carousel structure
+  // Add navigation dots
+  carouselHTML += `
+    </div>
+    <div class="carousel-dots d-flex justify-content-center mt-4">
+  `;
+  
+  testimonials.forEach((_, index) => {
+    carouselHTML += `
+      <button class="carousel-dot ${index === 0 ? 'active' : ''}" 
+              onclick="changeSlide(${index})" 
+              aria-label="Go to slide ${index + 1}"></button>
+    `;
+  });
+
   carouselHTML += `
     </div>
   </div>
@@ -69,29 +83,140 @@ function TestimonialCarousel() {
   container.innerHTML = carouselHTML;
   carouselContainer.appendChild(container);
 
-  let currentSlide = 0;
+  // Add CSS for testimonials carousel
+  const style = document.createElement('style');
+  style.textContent = `
+    .carousel-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .testimonial-header {
+      position: relative;
+    }
+    
+    .quote-mark img {
+      width: 40px;
+      opacity: 0.7;
+    }
+    
+    .carousel-wrapper {
+      position: relative;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      padding: 40px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    }
+    
+    .carousel-inner {
+      position: relative;
+      min-height: 250px;
+    }
+    
+    .carousel-slide {
+      width: 100%;
+      transition: opacity 0.5s ease;
+    }
+    
+    .testimonial-blockquote {
+      position: relative;
+      margin: 0 0 20px 0;
+      padding: 0 0 0 20px;
+      border-left: 3px solid #6c63ff;
+      font-style: italic;
+      color: #555;
+    }
+    
+    .testimonial-text {
+      margin-bottom: 20px;
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+    
+    .testimonial-author {
+      display: flex;
+      flex-direction: column;
+      margin-left: 23px;
+    }
+    
+    .author-name {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 3px;
+      font-size: 1.1rem;
+    }
+    
+    .author-role {
+      font-size: 0.9rem;
+      color: #777;
+    }
+    
+    .carousel-dots {
+      gap: 10px;
+    }
+    
+    .carousel-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #ddd;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .carousel-dot.active {
+      background-color: #6c63ff;
+    }
+    
+    @media (max-width: 768px) {
+      .carousel-wrapper {
+        padding: 30px 20px;
+      }
+      
+      .testimonial-text {
+        font-size: 1rem;
+      }
+    }
+  `;
+  document.head.appendChild(style);
 
-  // Function to show a specific slide
-  function showSlide(index) {
+  // Global function to change slides
+  window.changeSlide = function(index) {
     // Hide all slides
     document.querySelectorAll('.carousel-slide').forEach(slide => {
-      slide.style.display = 'none';
+      slide.style.opacity = '0';
+      slide.style.position = 'absolute';
     });
 
     // Show the selected slide
-    document.getElementById(`slide-${index}`).style.display = 'block';
+    const selectedSlide = document.getElementById(`slide-${index}`);
+    selectedSlide.style.opacity = '1';
+    selectedSlide.style.position = 'relative';
+
+    // Update dots
+    document.querySelectorAll('.carousel-dot').forEach((dot, i) => {
+      if (i === index) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+    });
 
     // Update current slide index
     currentSlide = index;
-  }
+  };
+
+  let currentSlide = 0;
 
   // Next slide function
   function nextSlide() {
     let next = currentSlide + 1;
-    if (next >= testimonials1.length) {
+    if (next >= testimonials.length) {
       next = 0;
     }
-    showSlide(next);
+    window.changeSlide(next);
   }
 
   // Auto advance slides every 8 seconds
@@ -102,56 +227,3 @@ function TestimonialCarousel() {
 document.addEventListener("DOMContentLoaded", function() {
   TestimonialCarousel();
 });
-
-// Add this CSS to your stylesheet
-/*
-.carousel-container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.carousel-wrapper {
-  position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
-  padding: 20px 0;
-}
-
-.carousel-inner {
-  position: relative;
-}
-
-.carousel-slide {
-  width: 100%;
-  position: relative;
-  padding: 0 40px;
-}
-
-.testimonial-text {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-.personal-detail {
-  border-top: 1px solid #eee;
-  padding-top: 15px;
-  margin-top: 15px;
-}
-
-.per-name {
-  color: #333;
-  font-size: 1.1rem;
-}
-
-.per-role {
-  color: #666;
-  font-size: 0.9rem;
-}
-
-.quote-mark img {
-  width: 40px;
-  height: auto;
-  opacity: 0.5;
-}
-*/
