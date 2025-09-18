@@ -6,16 +6,11 @@ function Herosection() {
   BG.classList.add("hero-bg");
   Container.innerHTML = `
   <div class="row row-cols-2 mt-2 gx-5 gy-5 align-items-start">
-  <div class="row row-cols-2 mt-2 gx-5 gy-5 align-items-start">
-          <div class="text-wrapper col-12 col-lg-7 d-flex align-items-center" style="min-height: 50vh;">
-            <div class="w-100">
-              <blockquote class="text-center mb-4" style="border-left: 4px solid #007bff; padding-left: 1rem; font-style: italic;">"Michigan based Real Estate Transaction Management Company streamlining real estate transactions with precision and care. We handle the details, so Realtors can focus on what matters most—closing deals smoothly and efficiently!"</blockquote>
+          <div class="text-wrapper col-12 col-lg-7">
+            <div class="text-body d-flex flex-column justify-content-start align-items-center">
               
-              <div class="btns-group mt-3 text-center">
-                <a class="button btn-theme-2" href="https://www.youtube.com/watch?v=3Sm3z8SEXMI" target="_blank">
-                <i class="bi bi-play-circle me-2"></i> Watch Video
-                </a>
-              </div>
+        
+        <blockquote class="text-center mb-4" style="border-left: 4px solid #007bff; padding-left: 1rem; font-style: italic;">"Michigan based Real Estate Transaction Management Company streamlining real estate transactions with precision and care. We handle the details, so Realtors can focus on what matters most—closing deals smoothly and efficiently!"</blockquote>
             </div>
           </div>
           <div
