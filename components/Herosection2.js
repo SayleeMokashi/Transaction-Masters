@@ -46,8 +46,7 @@ function Herosection2() {
           <p>Saylee and Shraddha's journey in real estate began with a shared understanding of the emotional complexities that come with buying or selling a home. Recognizing that the industry needed more than just transactional support, they founded a real estate transaction management company focused on streamlining processes while providing essential emotional guidance.</p>
           
           <p>Their approach empowers both clients and agents by simplifying the transaction, allowing agents to prioritize building meaningful relationships while ensuring clients feel supported and reassured throughout the process. Saylee and Shraddha are redefining the real estate experience by blending efficiency with empathy, making each step of the journey more seamless and human-centered.</p>
-          
-          <blockquote>"Michigan based Real Estate Transaction Management Company streamlining real estate transactions with precision and care. We handle the details, so Realtors can focus on what matters most—closing deals smoothly and efficiently!"</blockquote>
+    
         </div>
         <div class="btns-group mt-3">
           <a class="button btn-theme-2" href="https://www.youtube.com/watch?v=3Sm3z8SEXMI" target="_blank">
