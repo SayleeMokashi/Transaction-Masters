@@ -1,35 +1,35 @@
-function Herosection1() {
-  console.log("Herosection1 function called");
+function Herosection2() {
+  console.log("Herosection2 function called");
   
-  let Herosection1Element = document.getElementById("Herosection1");
+  let Herosection2Element = document.getElementById("Herosection2");
   
   // If element doesn't exist, try to create it
-  if (!Herosection1Element) {
-    console.log("Herosection1 element not found, creating it...");
+  if (!Herosection2Element) {
+    console.log("Herosection2 element not found, creating it...");
     
     // Create the element
-    Herosection1Element = document.createElement("div");
-    Herosection1Element.id = "Herosection1";
+    Herosection2Element = document.createElement("div");
+    Herosection2Element.id = "Herosection2";
     
     // Try to insert it before Footer
     const footer = document.getElementById("Footer");
     const testimonialCarousel = document.getElementById("TestimonialCarousel");
     
     if (footer && footer.parentNode) {
-      footer.parentNode.insertBefore(Herosection1Element, footer);
-      console.log("Herosection1 element created and inserted before Footer");
+      footer.parentNode.insertBefore(Herosection2Element, footer);
+      console.log("Herosection2 element created and inserted before Footer");
     } else if (testimonialCarousel && testimonialCarousel.parentNode) {
-      testimonialCarousel.parentNode.insertBefore(Herosection1Element, testimonialCarousel.nextSibling);
-      console.log("Herosection1 element created and inserted after TestimonialCarousel");
+      testimonialCarousel.parentNode.insertBefore(Herosection2Element, testimonialCarousel.nextSibling);
+      console.log("Herosection2 element created and inserted after TestimonialCarousel");
     } else {
       // Last resort: append to body
-      document.body.appendChild(Herosection1Element);
-      console.log("Herosection1 element created and appended to body");
+      document.body.appendChild(Herosection2Element);
+      console.log("Herosection2 element created and appended to body");
     }
   }
   
   // Clear any existing content
-  Herosection1Element.innerHTML = '';
+  Herosection2Element.innerHTML = '';
   
   const Container = document.createElement("div");
   const BG = document.createElement("div");
@@ -60,24 +60,24 @@ function Herosection1() {
   
   BG.innerHTML = '';
   
-  Herosection1Element.appendChild(Container);
-  Herosection1Element.appendChild(BG);
+  Herosection2Element.appendChild(Container);
+  Herosection2Element.appendChild(BG);
   
-  console.log("Herosection1 initialized successfully");
+  console.log("Herosection2 initialized successfully");
 }
 
 // Wait for DOM to be ready
 document.addEventListener('DOMContentLoaded', function() {
-  console.log("DOMContentLoaded event fired, calling Herosection1");
-  setTimeout(Herosection1, 100); // Small delay to ensure other elements are loaded
+  console.log("DOMContentLoaded event fired, calling Herosection2");
+  setTimeout(Herosection2, 100); // Small delay to ensure other elements are loaded
 });
 
 // Fallback: Wait for full page load
 window.addEventListener('load', function() {
   console.log("Window load event fired");
-  const element = document.getElementById("Herosection1");
+  const element = document.getElementById("Herosection2");
   if (!element || !element.hasChildNodes || element.children.length === 0) {
-    console.log("Calling Herosection1 on window load");
-    Herosection1();
+    console.log("Calling Herosection2 on window load");
+    Herosection2();
   }
 });
