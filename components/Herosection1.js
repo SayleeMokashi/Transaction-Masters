@@ -1,5 +1,11 @@
 function Herosection1() {
-  const Herosection1 = document.getElementById("Herosection1”);
+  const Herosection1Element = document.getElementById("Herosection1");
+  
+  if (!Herosection1Element) {
+    console.error("Herosection1 element not found!");
+    return;
+  }
+  
   const Container = document.createElement("div");
   const BG = document.createElement("div");
   Container.classList.add("container");
@@ -16,21 +22,21 @@ function Herosection1() {
         <p>Their approach empowers both clients and agents by simplifying the transaction, allowing agents to prioritize building meaningful relationships while ensuring clients feel supported and reassured throughout the process. Saylee and Shraddha are redefining the real estate experience by blending efficiency with empathy, making each step of the journey more seamless and human-centered.</p>
         
         <blockquote>"Michigan based Real Estate Transaction Management Company streamlining real estate transactions with precision and care. We handle the details, so Realtors can focus on what matters most—closing deals smoothly and efficiently!"</blockquote>
-
             </div>
             <div class="btns-group mt-3">
               <a class="button btn-theme-2" href="https://www.youtube.com/watch?v=3Sm3z8SEXMI" target="_blank">
               <i class="bi bi-play-circle me-2"></i> Watch Video
               </a>
-
-  
             </div>
           </div>
         </div>
-        
   `;
   BG.innerHTML = ``;
-  Herosection1.appendChild(Container);
-  Herosection1.appendChild(BG);
+  Herosection1Element.appendChild(Container);
+  Herosection1Element.appendChild(BG);
 }
-Herosection1();
+
+// Add this at the end of the file
+document.addEventListener('DOMContentLoaded', function() {
+    Herosection1();
+});
