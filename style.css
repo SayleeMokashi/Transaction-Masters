@@ -279,8 +279,8 @@ Theme Style
 .section .container,
 #FAQ,
 .testimonial-section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 #Features .text-body h1,
 #Features .text-body p,
