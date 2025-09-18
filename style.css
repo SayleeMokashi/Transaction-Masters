@@ -334,6 +334,8 @@ Navbar Section
 }
 /*** 
 
+/*** 
+
 ====================================================================
 Hero Section
 ====================================================================
@@ -349,6 +351,12 @@ Hero Section
   width: 100%;       /* Make the image responsive and fill the container */
   height: auto;      /* Maintain aspect ratio */
   object-fit: contain; /* Ensures the image fits within the container without cropping */
+}
+
+/* Add your Herosection1 styles here */
+#Herosection1 {
+    min-height: 300px;
+    padding: 40px 0;
 }
 
 @media (min-width: 786px) {
