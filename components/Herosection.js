@@ -15,7 +15,7 @@ function Herosection() {
         
         <p>Their approach empowers both clients and agents by simplifying the transaction, allowing agents to prioritize building meaningful relationships while ensuring clients feel supported and reassured throughout the process. Saylee and Shraddha are redefining the real estate experience by blending efficiency with empathy, making each step of the journey more seamless and human-centered.</p>
         
-        <blockquote>"The true value of a transaction lies not just in the paperwork, but in the trust and relationships we build along the way"</blockquote>
+        <blockquote>"Michigan based Real Estate Transaction Management Company streamlining real estate transactions with precision and care. We handle the details, so Realtors can focus on what matters most—closing deals smoothly and efficiently!"</blockquote>
 
             </div>
             <div class="btns-group mt-3">
