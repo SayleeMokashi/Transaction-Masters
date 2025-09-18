@@ -33,13 +33,15 @@ function Herosection2() {
   
   const Container = document.createElement("div");
   const BG = document.createElement("div");
-  Container.classList.add("container");
+  
+  // Use container-fluid for full width instead of container
+  Container.classList.add("container-fluid");
   BG.classList.add("hero-bg");
   
   Container.innerHTML = `
-    <div class="row row-cols-1 mt-2 gx-5 gy-5">
-      <div class="text-wrapper col-12 col-lg-7">
-        <div class="text-body">
+    <div class="row row-cols-1 mt-2 gx-5 gy-5 justify-content-center">
+      <div class="text-wrapper col-12 col-lg-8 col-xl-6">
+        <div class="text-body text-center">
           <h1 class="lead mb-4 fw-bold">
             Our Story
           </h1>
@@ -48,7 +50,7 @@ function Herosection2() {
           <p>Their approach empowers both clients and agents by simplifying the transaction, allowing agents to prioritize building meaningful relationships while ensuring clients feel supported and reassured throughout the process. Saylee and Shraddha are redefining the real estate experience by blending efficiency with empathy, making each step of the journey more seamless and human-centered.</p>
     
         </div>
-        <div class="btns-group mt-3">
+        <div class="btns-group mt-3 text-center">
           <a class="button btn-theme-2" href="https://www.youtube.com/watch?v=3Sm3z8SEXMI" target="_blank">
             <i class="bi bi-play-circle me-2"></i> Watch Video
           </a>
