@@ -1,13 +1,24 @@
 function Herosection1() {
-  const Herosection1Element = document.getElementById("Herosection1");
+  console.log("Herosection1 function called");
+  console.log("Document ready state:", document.readyState);
   
-  // Add error checking
+  // List all elements with IDs for debugging
+  const allElements = document.querySelectorAll('[id]');
+  console.log("All elements with IDs:", Array.from(allElements).map(el => el.id));
+  
+  const Herosection1Element = document.getElementById("Herosection1");
+  console.log("Herosection1Element:", Herosection1Element);
+  
   if (!Herosection1Element) {
-    console.warn("Herosection1 element not found - skipping initialization");
+    console.error("Herosection1 element not found!");
+    console.log("Available elements:", document.body.innerHTML.substring(0, 500));
     return;
   }
   
-  console.log("Initializing Herosection1");
+  console.log("Herosection1 element found, proceeding with initialization");
+  
+  // Clear any existing content
+  Herosection1Element.innerHTML = '';
   
   const Container = document.createElement("div");
   const BG = document.createElement("div");
@@ -36,17 +47,34 @@ function Herosection1() {
     </div>
   `;
   
-  BG.innerHTML = ``;
+  BG.innerHTML = '';
+  
   Herosection1Element.appendChild(Container);
   Herosection1Element.appendChild(BG);
+  
+  console.log("Herosection1 initialized successfully");
 }
 
-// Wait for DOM to be ready
+// Multiple initialization strategies
+console.log("Loading Herosection1 script...");
+
+// Strategy 1: If DOM is already loaded
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+  console.log("DOM already loaded, calling Herosection1 immediately");
+  setTimeout(Herosection1, 100); // Small delay to ensure other scripts have run
+}
+
+// Strategy 2: Wait for DOMContentLoaded
 document.addEventListener('DOMContentLoaded', function() {
+  console.log("DOMContentLoaded event fired, calling Herosection1");
   Herosection1();
 });
 
-// Also call immediately if DOM is already loaded
-if (document.readyState !== 'loading') {
-  Herosection1();
-}
+// Strategy 3: Wait for full page load
+window.addEventListener('load', function() {
+  console.log("Window load event fired, calling Herosection1");
+  // Only call if element still doesn't exist
+  if (!document.getElementById("Herosection1").hasChildNodes()) {
+    Herosection1();
+  }
+});
