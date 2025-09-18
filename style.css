@@ -357,6 +357,8 @@ Hero Section
 #Herosection1 {
     min-height: 300px;
     padding: 40px 0;
+    background-color: var(--neutral-50);
+    position: relative;
 }
 
 @media (min-width: 786px) {
