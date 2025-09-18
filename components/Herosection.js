@@ -5,24 +5,17 @@ function Herosection() {
   Container.classList.add("container");
   BG.classList.add("hero-bg");
   Container.innerHTML = `
-  <div class="row row-cols-2 mt-2 gx-5 gy-5">
+  <div class="row row-cols-2 mt-2 gx-5 gy-5 align-items-start">
           <div class="text-wrapper col-12 col-lg-7">
-            <div class="text-body">
+            <div class="text-body d-flex flex-column justify-content-start align-items-center">
               
         
-        <blockquote>"Michigan based Real Estate Transaction Management Company streamlining real estate transactions with precision and care. We handle the details, so Realtors can focus on what matters most—closing deals smoothly and efficiently!"</blockquote>
-
+        <blockquote class="text-center mb-4" style="border-left: 4px solid #007bff; padding-left: 1rem; font-style: italic;">"Michigan based Real Estate Transaction Management Company streamlining real estate transactions with precision and care. We handle the details, so Realtors can focus on what matters most—closing deals smoothly and efficiently!"</blockquote>
             </div>
-            <div class="btns-group mt-3">
-              <a class="button btn-theme-2" href="https://www.youtube.com/watch?v=3Sm3z8SEXMI" target="_blank">
-              <i class="bi bi-play-circle me-2"></i> Watch Video
-              </a>
-
-  
-            </div>
+            
           </div>
           <div
-            class="mockup-img col-12 col-lg-5 d-flex overflow-hidden justify-content-center"
+            class="mockup-img col-12 col-lg-5 d-flex overflow-hidden justify-content-center align-items-start"
           >
             <img class="text-wrapper" src="./Images/BigPhoto.jpg" alt="" id="" />
           </div>
