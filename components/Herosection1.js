@@ -1,21 +1,32 @@
 function Herosection1() {
   console.log("Herosection1 function called");
-  console.log("Document ready state:", document.readyState);
   
-  // List all elements with IDs for debugging
-  const allElements = document.querySelectorAll('[id]');
-  console.log("All elements with IDs:", Array.from(allElements).map(el => el.id));
+  let Herosection1Element = document.getElementById("Herosection1");
   
-  const Herosection1Element = document.getElementById("Herosection1");
-  console.log("Herosection1Element:", Herosection1Element);
-  
+  // If element doesn't exist, try to create it
   if (!Herosection1Element) {
-    console.error("Herosection1 element not found!");
-    console.log("Available elements:", document.body.innerHTML.substring(0, 500));
-    return;
+    console.log("Herosection1 element not found, creating it...");
+    
+    // Create the element
+    Herosection1Element = document.createElement("div");
+    Herosection1Element.id = "Herosection1";
+    
+    // Try to insert it before Footer
+    const footer = document.getElementById("Footer");
+    const testimonialCarousel = document.getElementById("TestimonialCarousel");
+    
+    if (footer && footer.parentNode) {
+      footer.parentNode.insertBefore(Herosection1Element, footer);
+      console.log("Herosection1 element created and inserted before Footer");
+    } else if (testimonialCarousel && testimonialCarousel.parentNode) {
+      testimonialCarousel.parentNode.insertBefore(Herosection1Element, testimonialCarousel.nextSibling);
+      console.log("Herosection1 element created and inserted after TestimonialCarousel");
+    } else {
+      // Last resort: append to body
+      document.body.appendChild(Herosection1Element);
+      console.log("Herosection1 element created and appended to body");
+    }
   }
-  
-  console.log("Herosection1 element found, proceeding with initialization");
   
   // Clear any existing content
   Herosection1Element.innerHTML = '';
@@ -55,26 +66,18 @@ function Herosection1() {
   console.log("Herosection1 initialized successfully");
 }
 
-// Multiple initialization strategies
-console.log("Loading Herosection1 script...");
-
-// Strategy 1: If DOM is already loaded
-if (document.readyState === 'complete' || document.readyState === 'interactive') {
-  console.log("DOM already loaded, calling Herosection1 immediately");
-  setTimeout(Herosection1, 100); // Small delay to ensure other scripts have run
-}
-
-// Strategy 2: Wait for DOMContentLoaded
+// Wait for DOM to be ready
 document.addEventListener('DOMContentLoaded', function() {
   console.log("DOMContentLoaded event fired, calling Herosection1");
-  Herosection1();
+  setTimeout(Herosection1, 100); // Small delay to ensure other elements are loaded
 });
 
-// Strategy 3: Wait for full page load
+// Fallback: Wait for full page load
 window.addEventListener('load', function() {
-  console.log("Window load event fired, calling Herosection1");
-  // Only call if element still doesn't exist
-  if (!document.getElementById("Herosection1").hasChildNodes()) {
+  console.log("Window load event fired");
+  const element = document.getElementById("Herosection1");
+  if (!element || !element.hasChildNodes || element.children.length === 0) {
+    console.log("Calling Herosection1 on window load");
     Herosection1();
   }
 });
