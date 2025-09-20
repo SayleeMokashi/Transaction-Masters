@@ -42,7 +42,7 @@ function Herosection2() {
     <div class="row row-cols-1 mt-2 gx-5 gy-5 justify-content-center">
       <div class="text-wrapper col-12 col-lg-8 col-xl-6">
         <div class="text-body text-center">
-          <h1 class="lead mb-4 fw-bold">
+          <h1 class="text-center fw-bold mb-4">
                Our Story
           </h1>
           <p>Saylee and Shraddha's journey in real estate began with a shared understanding of the emotional complexities that come with buying or selling a home. Recognizing that the industry needed more than just transactional support, they founded a real estate transaction management company focused on streamlining processes while providing essential emotional guidance.</p>
