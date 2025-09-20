@@ -4,7 +4,7 @@ function Metrics() {
   Container.classList.add("container", "mt-0");
 
   Container.innerHTML = `
-    <h1 class="text-center mb-1">Meet the Team</h1>
+    <h1 class="text-center fw-bold mb-4">Meet the Team</h1>
     <div class="row justify-content-center gx-5">
       <!-- Team Member 1 -->
       <div class="col-12 col-md-4 text-center">
