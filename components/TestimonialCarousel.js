@@ -39,7 +39,7 @@ function TestimonialCarousel() {
     <!-- <div class="quote-mark mb-3">
       <img src="./Images/Quote mark.png" alt="Quote" />
     </div> -->
-    <h2 class="title fw-bold">Testimonials</h2>
+    <h2 class="text-center fw-bold">Testimonials</h2>
   </div>
   
   <div class="carousel-wrapper position-relative overflow-hidden">
